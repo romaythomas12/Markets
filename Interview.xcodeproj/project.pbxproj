@@ -13,6 +13,8 @@
 		8B6CE37622562CA800A73A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6CE37522562CA800A73A87 /* Assets.xcassets */; };
 		8B6CE37922562CA800A73A87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6CE37722562CA800A73A87 /* LaunchScreen.storyboard */; };
 		8B6CE38422562CA800A73A87 /* InterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6CE38322562CA800A73A87 /* InterviewTests.swift */; };
+		8B98F71427183E95006B59A2 /* NetworkInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98F71327183E95006B59A2 /* NetworkInterceptor.swift */; };
+		8B98F716271841C2006B59A2 /* markets.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B98F715271841C2006B59A2 /* markets.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		8B6CE37F22562CA800A73A87 /* InterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6CE38322562CA800A73A87 /* InterviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewTests.swift; sourceTree = "<group>"; };
 		8B6CE38522562CA800A73A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B98F71327183E95006B59A2 /* NetworkInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptor.swift; sourceTree = "<group>"; };
+		8B98F715271841C2006B59A2 /* markets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = markets.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 				8B6CE37522562CA800A73A87 /* Assets.xcassets */,
 				8B6CE37722562CA800A73A87 /* LaunchScreen.storyboard */,
 				8B6CE37A22562CA800A73A87 /* Info.plist */,
+				8B98F71227183E63006B59A2 /* Interceptor */,
 			);
 			path = Interview;
 			sourceTree = "<group>";
@@ -94,6 +99,15 @@
 				8B6CE38522562CA800A73A87 /* Info.plist */,
 			);
 			path = InterviewTests;
+			sourceTree = "<group>";
+		};
+		8B98F71227183E63006B59A2 /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				8B98F71327183E95006B59A2 /* NetworkInterceptor.swift */,
+				8B98F715271841C2006B59A2 /* markets.json */,
+			);
+			path = Interceptor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +194,7 @@
 				8B6CE37922562CA800A73A87 /* LaunchScreen.storyboard in Resources */,
 				8B6CE37622562CA800A73A87 /* Assets.xcassets in Resources */,
 				8B6CE37422562CA600A73A87 /* Main.storyboard in Resources */,
+				8B98F716271841C2006B59A2 /* markets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +214,7 @@
 			files = (
 				8B6CE37122562CA600A73A87 /* MarketsTableViewController.swift in Sources */,
 				8B6CE36F22562CA600A73A87 /* AppDelegate.swift in Sources */,
+				8B98F71427183E95006B59A2 /* NetworkInterceptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

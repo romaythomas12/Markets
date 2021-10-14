@@ -54,7 +54,10 @@ class MarketsTableViewController: UITableViewController {
         var request = URLRequest(url: URL(string: url)!)
         request.addValue("Mock", forHTTPHeaderField: "Client")
         
-        let defaultSession = URLSession(configuration: .default)
+        let configuration = URLSessionConfiguration.default
+        configuration.protocolClasses = [NetworkInterceptor.self]
+        let defaultSession = URLSession(configuration: configuration)
+        
         defaultSession.dataTask(with: request) { (data, response, error) in
             var resultMarkets = [Market]()
             if let result = try? JSONSerialization.jsonObject(with: data!, options: []) as? Dictionary<String, Any>,
