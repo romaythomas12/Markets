@@ -12,8 +12,9 @@ The task involves migrating an existing iOS app from MVC  to MVVM architecture. 
         * API Service Layer Extraction: Moving network-related code into a separate MarketService class that handles API interactions and provides clean data to the ViewModel.
         * Concurrency Model Update: Transitioning to Swift's new async/await concurrency model to replace older, callback-based network calls, improving readability and reducing complexity.
         * SwiftUI Integration: Gradually introducing SwiftUI to replace the UIKit views, allowing for reactive, declarative UI updates, while leveraging SwiftUI's state management.
-        * State Management: Implementing SwiftUI’s @Published and @StateObject to ensure the UI reacts to changes in the ViewModel, providing a smooth user experience with real-time data updates.
-2. Next Task Priority
+
+       
+# Next Task Priority
 After completing the core migration to MVVM, the next priority would focus on:
     1. Gradual Migration to SwiftUI:
         * Task: Incrementally replace UIKit-based views with SwiftUI. Start by converting simpler components, such as cells and lists, to SwiftUI while maintaining backward compatibility with existing UIKit views.
@@ -28,7 +29,7 @@ After completing the core migration to MVVM, the next priority would focus on:
         * Task: Review the entire codebase to ensure that it passes Swift 6’s full concurrency checks. This includes using @MainActor annotations where necessary and ensuring that data races are avoided in asynchronous code.
         * Reason: Swift 6 introduces stricter concurrency checks, helping catch potential issues such as race conditions early during development. Adhering to these checks ensures safer and more robust multi-threaded code.
 
-3. If I Had More Time: Future Improvements
+# If I Had More Time: Future Improvements
     1. Robust Error Handling and User Feedback:
         * Improvement: Improve error handling across the app by providing user-friendly error messages in cases of network failure, data parsing issues, or empty API responses. Additionally, implement retry mechanisms and potential offline modes for better usability.
         * Reason: Enhancing error handling improves user trust and the overall app experience by ensuring users know what’s happening when issues occur.
