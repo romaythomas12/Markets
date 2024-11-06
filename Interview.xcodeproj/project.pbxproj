@@ -15,6 +15,12 @@
 		8B6CE38422562CA800A73A87 /* InterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6CE38322562CA800A73A87 /* InterviewTests.swift */; };
 		8B98F71427183E95006B59A2 /* NetworkInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98F71327183E95006B59A2 /* NetworkInterceptor.swift */; };
 		8B98F716271841C2006B59A2 /* markets.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B98F715271841C2006B59A2 /* markets.json */; };
+		B1528C8E2CC6C8E400BC4D98 /* MockMarketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1528C8D2CC6C8E400BC4D98 /* MockMarketService.swift */; };
+		B1986FF32CDB22F400557506 /* MockNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1986FF22CDB22F400557506 /* MockNetworkSession.swift */; };
+		B1986FF52CDB235000557506 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1986FF42CDB235000557506 /* NetworkClientTests.swift */; };
+		B1C116C72CC69E140002F3A5 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C116C32CC69E140002F3A5 /* Market.swift */; };
+		B1C116C82CC69E140002F3A5 /* MarketAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C116C12CC69E140002F3A5 /* MarketAPIService.swift */; };
+		B1C116C92CC69E140002F3A5 /* MarketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C116C52CC69E140002F3A5 /* MarketsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 		8B6CE38522562CA800A73A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B98F71327183E95006B59A2 /* NetworkInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptor.swift; sourceTree = "<group>"; };
 		8B98F715271841C2006B59A2 /* markets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = markets.json; sourceTree = "<group>"; };
+		B1528C8D2CC6C8E400BC4D98 /* MockMarketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMarketService.swift; sourceTree = "<group>"; };
+		B1986FF22CDB22F400557506 /* MockNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkSession.swift; sourceTree = "<group>"; };
+		B1986FF42CDB235000557506 /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		B1C116C12CC69E140002F3A5 /* MarketAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketAPIService.swift; sourceTree = "<group>"; };
+		B1C116C32CC69E140002F3A5 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		B1C116C52CC69E140002F3A5 /* MarketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +94,14 @@
 			isa = PBXGroup;
 			children = (
 				8B6CE36E22562CA600A73A87 /* AppDelegate.swift */,
-				8B6CE37022562CA600A73A87 /* MarketsTableViewController.swift */,
+				B1C116C42CC69E140002F3A5 /* Model */,
+				B1528C202CC6B67600BC4D98 /* View */,
+				B1C116C62CC69E140002F3A5 /* ViewModel */,
+				B1C116C22CC69E140002F3A5 /* APIService */,
 				8B6CE37222562CA600A73A87 /* Main.storyboard */,
 				8B6CE37522562CA800A73A87 /* Assets.xcassets */,
 				8B6CE37722562CA800A73A87 /* LaunchScreen.storyboard */,
 				8B6CE37A22562CA800A73A87 /* Info.plist */,
-				8B98F71227183E63006B59A2 /* Interceptor */,
 			);
 			path = Interview;
 			sourceTree = "<group>";
@@ -95,7 +109,7 @@
 		8B6CE38222562CA800A73A87 /* InterviewTests */ = {
 			isa = PBXGroup;
 			children = (
-				8B6CE38322562CA800A73A87 /* InterviewTests.swift */,
+				B1528C8C2CC6C8CC00BC4D98 /* Test */,
 				8B6CE38522562CA800A73A87 /* Info.plist */,
 			);
 			path = InterviewTests;
@@ -108,6 +122,50 @@
 				8B98F715271841C2006B59A2 /* markets.json */,
 			);
 			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		B1528C202CC6B67600BC4D98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B6CE37022562CA600A73A87 /* MarketsTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B1528C8C2CC6C8CC00BC4D98 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				8B6CE38322562CA800A73A87 /* InterviewTests.swift */,
+				B1528C8D2CC6C8E400BC4D98 /* MockMarketService.swift */,
+				B1986FF42CDB235000557506 /* NetworkClientTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		B1C116C22CC69E140002F3A5 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				B1C116C12CC69E140002F3A5 /* MarketAPIService.swift */,
+				B1986FF22CDB22F400557506 /* MockNetworkSession.swift */,
+				8B98F71227183E63006B59A2 /* Interceptor */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		B1C116C42CC69E140002F3A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1C116C32CC69E140002F3A5 /* Market.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1C116C62CC69E140002F3A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B1C116C52CC69E140002F3A5 /* MarketsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +273,10 @@
 				8B6CE37122562CA600A73A87 /* MarketsTableViewController.swift in Sources */,
 				8B6CE36F22562CA600A73A87 /* AppDelegate.swift in Sources */,
 				8B98F71427183E95006B59A2 /* NetworkInterceptor.swift in Sources */,
+				B1C116C72CC69E140002F3A5 /* Market.swift in Sources */,
+				B1C116C82CC69E140002F3A5 /* MarketAPIService.swift in Sources */,
+				B1C116C92CC69E140002F3A5 /* MarketsViewModel.swift in Sources */,
+				B1986FF32CDB22F400557506 /* MockNetworkSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B6CE38422562CA800A73A87 /* InterviewTests.swift in Sources */,
+				B1528C8E2CC6C8E400BC4D98 /* MockMarketService.swift in Sources */,
+				B1986FF52CDB235000557506 /* NetworkClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,14 +441,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RGSJ47WJ67;
+				DEVELOPMENT_TEAM = NJT8U2P7YH;
 				INFOPLIST_FILE = Interview/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.project.Interview;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.Interview.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,14 +460,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RGSJ47WJ67;
+				DEVELOPMENT_TEAM = NJT8U2P7YH;
 				INFOPLIST_FILE = Interview/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.project.Interview;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.Interview.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,6 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RGSJ47WJ67;
 				INFOPLIST_FILE = InterviewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,6 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RGSJ47WJ67;
 				INFOPLIST_FILE = InterviewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
