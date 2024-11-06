@@ -8,10 +8,10 @@
 
 ## Introduction
 The task involves migrating an existing iOS app from MVC  to MVVM architecture. This shift is aimed at improving modularity, testability, and separation of concerns. Key objectives include:
-        * Separation of Concerns: Extracting business logic, including API calls and data processing, from the MarketsTableViewController into a dedicated MarketsViewModel, making the code more maintainable.
-        * API Service Layer Extraction: Moving network-related code into a separate MarketService class that handles API interactions and provides clean data to the ViewModel.
-        * Concurrency Model Update: Transitioning to Swift's new async/await concurrency model to replace older, callback-based network calls, improving readability and reducing complexity.
-        * SwiftUI Integration: Gradually introducing SwiftUI to replace the UIKit views, allowing for reactive, declarative UI updates, while leveraging SwiftUI's state management.
+* Separation of Concerns: Extracting business logic, including API calls and data processing, from the MarketsTableViewController into a dedicated MarketsViewModel, making the code more maintainable.
+* API Service Layer Extraction: Moving network-related code into a separate MarketService class that handles API interactions and provides clean data to the ViewModel.
+* Concurrency Model Update: Transitioning to Swift's new async/await concurrency model to replace older, callback-based network calls, improving readability and reducing complexity.
+* SwiftUI Integration: Gradually introducing SwiftUI to replace the UIKit views, allowing for reactive, declarative UI updates, while leveraging SwiftUI's state management.
 
        
 # Next Task Priority
